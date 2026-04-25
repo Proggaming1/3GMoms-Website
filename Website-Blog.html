@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="file:///C:/Users/Lenovo/Downloads/3G%20moms%20kitchen.png">
+    <title>3grecep Websites Store</title>
+    <link rel="stylesheet" href="Website-Blog.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="file:///D:/HS%20GESANG/Bisnis/Pemogramman/Website%20Store%203grecep/Dashboard/Website%20Dashboard.html">3Grecep Kitchen Websites Store</a>
+        </div>
+        
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="file:///D:/HS%20GESANG/Bisnis/Pemogramman/Website%20Store%203grecep/Dashboard/Website%20Dashboard.html">🏠︎ Beranda</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#layanan" class="dropdown-toggle">Online Platfrom</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#hosting">🍽️ Shoppee food</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#Our product" class="dropdown-toggle">Our product</a>
+                <ul class="dropdown-menu">
+                    <li><a href="D:\HS GESANG\Bisnis\Pemogramman\Website Store 3grecep\Snack\Website-Snack.html">🍟 snack</a></li>
+                    <li><a href="D:\HS GESANG\Bisnis\Pemogramman\Website Store 3grecep\Lauk\Website-Lauk.html">🍖 Lauk</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#resources" class="dropdown-toggle">Resources</a>
+                <ul class="dropdown-menu">
+                    <li><a href="file:///D:/HS%20GESANG/Bisnis/Pemogramman/Website%20Store%203grecep/Blog/Website-Blog.html">📝 About</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#kontak" class="dropdown-toggle"> Contact and Media Social</a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://www.instagram.com/3gmomskitchen?igsh=OGptbHY3d2pqN3pk" target="_blank">🅾 Instragram</a></li>
+                    <li><a href="https://wa.me/6282338516014" target="_blank">🟢 WhatsApp</a></li>
+                    <li><a href="https://www.facebook.com/share/1Zjbq8gyhx/" target="_blank">ⓕ Facebook</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <br>
+    <div class="card-container">
+
+  <!-- PRODUK 1 -->
+  <div class="card">
+    <img src="file:///C:/Users/Lenovo/Downloads/Merah%20dan%20Kuning%20Modern%20Nasi%20Goreng%20Promosi%20Instagram%20Post.jpg" alt="Nasi Goreng">
+    <h3>Nasi Goreng</h3>
+    <p class="harga">Rp10.000</p>
+    <button onclick="pesanWA('Nasi Goreng', '10000')">Pesan</button>
+  </div>
+
+  <!-- PRODUK 2 -->
+  <div class="card">
+    <img src="file:///C:/Users/Lenovo/Downloads/Merah%20dan%20Kuning%20Modern%20Nasi%20Goreng%20Promosi%20Instagram%20Post%20(1).jpg" alt="Sambal Goreng">
+    <h3>Sambal Goreng</h3>
+    <p class="harga">Rp15.000</p>
+    <button onclick="pesanWA('Sambal Goreng', '15000')">Pesan</button>
+  </div>
+
+  <div class="card">
+    <img src="file:///C:/Users/Lenovo/Downloads/Harga.jpg" alt="Lauk">
+    <h3>Piscok</h3>
+    <p class="harga">Rp2.500</p>
+    <button onclick="pesanWA('Piscok', '2500')">Pesan</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Lauk">
+    <h3>Lauk Lezat</h3>
+    <p class="harga">Rp15.000</p>
+    <button onclick="pesanWA('Lauk Lezat', '15000')">Pesan</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Lauk">
+    <h3>Lauk Lezat</h3>
+    <p class="harga">Rp15.000</p>
+    <button onclick="pesanWA('Lauk Lezat', '15000')">Pesan</button>
+  </div>
+
+</div>
+<script>
+function pesanWA(namaProduk, harga) {
+    let noWa = "6282338516014";
+
+    let pesan = `Halo, saya ingin pesan/tanya:%0A
+Produk: ${namaProduk}%0A
+Harga: Rp${harga}%0A
+Jumlah: 1`;
+
+    let url = `https://wa.me/${noWa}?text=${pesan}`;
+
+    window.open(url, "_blank");
+}
+</script>
+</script>
+    <footer>
+        <p style="text-align: center;">&copy; 2024 3Gmoms Kitchen Websites Store. All rights reserved.</p>
+    </footer>
+ </body>
+</html>
